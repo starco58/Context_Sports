@@ -1047,3 +1047,487 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-05 20:44:1
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-05 20:44:10 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-05 21:47:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 204ms (Views: 73.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-05 21:47:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-05 21:47:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-05 21:48:02 -0500
+Processing by PlayersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-05 21:48:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-05 21:48:03 -0500
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-06-05 21:48:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (29.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (242.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-06 15:56:16 -0500
+Processing by PlayersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 126ms (Views: 41.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 15:56:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 15:56:17 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-06 16:22:30 -0500
+Processing by PlayersController#index as HTML
+  [1m[35mUser Load (296.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlayer Load (15.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 2363ms (Views: 883.1ms | ActiveRecord: 311.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:22:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:22:39 -0500
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:22:45 -0500
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (16.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 434ms (Views: 131.0ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:22:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:22:48 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-06-06 16:22:51 -0500
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (21.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered events/new.html.erb within layouts/application (413.0ms)
+Completed 200 OK in 664ms (Views: 461.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:22:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:22:52 -0500
+
+
+Started GET "/create_event?game=Football&played_on=November%2C+4+2013&gametime=8%3A30PM+ET&home_team=Chicago+Bears&away_team=Green+Bay+Packers" for 127.0.0.1 at 2014-06-06 16:29:20 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"game"=>"Football", "played_on"=>"November, 4 2013", "gametime"=>"8:30PM ET", "home_team"=>"Chicago Bears", "away_team"=>"Green Bay Packers"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "events" ("away_team", "created_at", "game", "gametime", "home_team", "played_on", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["away_team", "Green Bay Packers"], ["created_at", "2014-06-06 21:29:20.091410"], ["game", "Football"], ["gametime", "2000-01-01 20:30:00.000000"], ["home_team", "Chicago Bears"], ["played_on", "2013-11-04"], ["updated_at", "2014-06-06 21:29:20.091410"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 51ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:29:20 -0500
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:29:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:29:20 -0500
+
+
+Started GET "/events/1/edit" for 127.0.0.1 at 2014-06-06 16:29:28 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 11.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:29:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:29:28 -0500
+
+
+Started GET "/update_event/1?game=Football&played_on=2013-11-04&gametime=2000-01-01+20%3A30%3A00+UTC&home_team=Green+Bay+Packers&away_team=Chicago+Bears" for 127.0.0.1 at 2014-06-06 16:29:43 -0500
+Processing by EventsController#update as HTML
+  Parameters: {"game"=>"Football", "played_on"=>"2013-11-04", "gametime"=>"2000-01-01 20:30:00 UTC", "home_team"=>"Green Bay Packers", "away_team"=>"Chicago Bears", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "events" SET "away_team" = ?, "home_team" = ?, "updated_at" = ? WHERE "events"."id" = 1  [["away_team", "Chicago Bears"], ["home_team", "Green Bay Packers"], ["updated_at", "2014-06-06 21:29:43.597755"]]
+  [1m[36m (31.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 63ms (ActiveRecord: 34.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:29:43 -0500
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:29:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:29:43 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-06-06 16:31:09 -0500
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered events/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:31:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:31:09 -0500
+
+
+Started GET "/create_event?game=Football&played_on=11%2F10%2F2013&gametime=1pm+et&home_team=Chicago+Bears&away_team=Detroit+Lions" for 127.0.0.1 at 2014-06-06 16:32:25 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"game"=>"Football", "played_on"=>"11/10/2013", "gametime"=>"1pm et", "home_team"=>"Chicago Bears", "away_team"=>"Detroit Lions"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("away_team", "created_at", "game", "gametime", "home_team", "played_on", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["away_team", "Detroit Lions"], ["created_at", "2014-06-06 21:32:25.337006"], ["game", "Football"], ["gametime", "2000-01-01 13:00:00.000000"], ["home_team", "Chicago Bears"], ["played_on", "2013-10-11"], ["updated_at", "2014-06-06 21:32:25.337006"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 15ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:32:25 -0500
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:32:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:32:25 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-06-06 16:32:32 -0500
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered events/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:32:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:32:32 -0500
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-06-06 16:35:14 -0500
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered events/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:35:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:35:14 -0500
+
+
+Started GET "/create_event?game=Football&played_on=9%2F29%2F2013&gametime=1pm+et&home_team=Detroit+Lions&away_team=Chicago+Bears" for 127.0.0.1 at 2014-06-06 16:36:05 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"game"=>"Football", "played_on"=>"9/29/2013", "gametime"=>"1pm et", "home_team"=>"Detroit Lions", "away_team"=>"Chicago Bears"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("away_team", "created_at", "game", "gametime", "home_team", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["away_team", "Chicago Bears"], ["created_at", "2014-06-06 21:36:05.335589"], ["game", "Football"], ["gametime", "2000-01-01 13:00:00.000000"], ["home_team", "Detroit Lions"], ["updated_at", "2014-06-06 21:36:05.335589"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 16ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:36:05 -0500
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:36:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:36:05 -0500
+
+
+Started GET "/events/3/edit" for 127.0.0.1 at 2014-06-06 16:36:12 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered events/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:36:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:36:12 -0500
+
+
+Started GET "/update_event/3?game=Football&played_on=09%2F29%2F2013&gametime=2000-01-01+13%3A00%3A00+UTC&home_team=Detroit+Lions&away_team=Chicago+Bears" for 127.0.0.1 at 2014-06-06 16:36:28 -0500
+Processing by EventsController#update as HTML
+  Parameters: {"game"=>"Football", "played_on"=>"09/29/2013", "gametime"=>"2000-01-01 13:00:00 UTC", "home_team"=>"Detroit Lions", "away_team"=>"Chicago Bears", "id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:36:28 -0500
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:36:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:36:29 -0500
+
+
+Started GET "/events/3/edit" for 127.0.0.1 at 2014-06-06 16:36:33 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered events/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:36:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:36:33 -0500
+
+
+Started GET "/update_event/3?game=Football&played_on=September+29%2C+2013&gametime=2000-01-01+13%3A00%3A00+UTC&home_team=Detroit+Lions&away_team=Chicago+Bears" for 127.0.0.1 at 2014-06-06 16:36:38 -0500
+Processing by EventsController#update as HTML
+  Parameters: {"game"=>"Football", "played_on"=>"September 29, 2013", "gametime"=>"2000-01-01 13:00:00 UTC", "home_team"=>"Detroit Lions", "away_team"=>"Chicago Bears", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "events" SET "played_on" = ?, "updated_at" = ? WHERE "events"."id" = 3  [["played_on", "2013-09-29"], ["updated_at", "2014-06-06 21:36:38.896509"]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 25ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-06-06 16:36:38 -0500
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:36:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:36:39 -0500
+
+
+Started GET "/plays" for 127.0.0.1 at 2014-06-06 16:37:23 -0500
+Processing by PlaysController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlay Load (0.0ms)[0m  [1mSELECT "plays".* FROM "plays"[0m
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 92ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:37:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:37:23 -0500
+
+
+Started GET "/plays/new" for 127.0.0.1 at 2014-06-06 16:38:14 -0500
+Processing by PlaysController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered plays/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:38:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:38:14 -0500
+
+
+Started GET "/plays/new" for 127.0.0.1 at 2014-06-06 16:39:10 -0500
+Processing by PlaysController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered plays/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:39:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:39:10 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-06 16:39:14 -0500
+Processing by PlayersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:39:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:39:14 -0500
+
+
+Started GET "/players/new" for 127.0.0.1 at 2014-06-06 16:39:20 -0500
+Processing by PlayersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered players/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:39:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:39:20 -0500
+
+
+Started GET "/create_player?name=Matt+Stafford&position=QB&image_url=http%3A%2F%2Fa.espncdn.com%2Fcombiner%2Fi%3Fimg%3D%2Fi%2Fheadshots%2Fnfl%2Fplayers%2Ffull%2F12483.png%26w%3D350%26h%3D254" for 127.0.0.1 at 2014-06-06 16:40:22 -0500
+Processing by PlayersController#create as HTML
+  Parameters: {"name"=>"Matt Stafford", "position"=>"QB", "image_url"=>"http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12483.png&w=350&h=254"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "players" ("created_at", "image_url", "name", "position", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-06 21:40:22.303287"], ["image_url", "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12483.png&w=350&h=254"], ["name", "Matt Stafford"], ["position", "QB"], ["updated_at", "2014-06-06 21:40:22.303287"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/players
+Completed 302 Found in 17ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2014-06-06 16:40:22 -0500
+Processing by PlayersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players"
+  Rendered players/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:40:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:40:22 -0500
+
+
+Started GET "/players/new" for 127.0.0.1 at 2014-06-06 16:40:31 -0500
+Processing by PlayersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered players/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:40:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:40:31 -0500
+
+
+Started GET "/create_player?name=Eli+Manning&position=QB&image_url=http%3A%2F%2Fa.espncdn.com%2Fcombiner%2Fi%3Fimg%3D%2Fi%2Fheadshots%2Fnfl%2Fplayers%2Ffull%2F5526.png%26w%3D350%26h%3D254" for 127.0.0.1 at 2014-06-06 16:41:10 -0500
+Processing by PlayersController#create as HTML
+  Parameters: {"name"=>"Eli Manning", "position"=>"QB", "image_url"=>"http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/5526.png&w=350&h=254"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "players" ("created_at", "image_url", "name", "position", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-06-06 21:41:10.761058"], ["image_url", "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/5526.png&w=350&h=254"], ["name", "Eli Manning"], ["position", "QB"], ["updated_at", "2014-06-06 21:41:10.761058"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/players
+Completed 302 Found in 20ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2014-06-06 16:41:10 -0500
+Processing by PlayersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  Rendered players/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-06 16:41:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-06 16:41:10 -0500
