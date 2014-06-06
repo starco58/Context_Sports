@@ -6,5 +6,6 @@ class User < ActiveRecord::Base
 
   has_many :players
   has_many :events
+  has_many :responses, through => :plays
 
 end
