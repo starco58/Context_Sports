@@ -2,6 +2,7 @@ class Player < ActiveRecord::Base
 
   has_many :plays
   has_many :users
+  has_many :owners
 
   has_many :events
 

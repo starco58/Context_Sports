@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the Owner resource:
+  # CREATE
+  get('/owners/new', { :controller => 'owners', :action => 'new' })
+  get('/create_owner', { :controller => 'owners', :action => 'create' })
+
+  # READ
+  get('/owners', { :controller => 'owners', :action => 'index' })
+  get('/owners/:id', { :controller => 'owners', :action => 'show' })
+
+  # UPDATE
+  get('/owners/:id/edit', { :controller => 'owners', :action => 'edit' })
+  get('/update_owner/:id', { :controller => 'owners', :action => 'update' })
+
+  # DELETE
+  get('/delete_owner/:id', { :controller => 'owners', :action => 'destroy' })
+  #------------------------------
+
   devise_for :users
 
   root 'players#index'
