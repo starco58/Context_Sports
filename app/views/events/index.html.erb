@@ -32,9 +32,9 @@
 
         <td><%= event.game %></td>
 
-        <td><%= event.played_on %></td>
+        <td><%= event.played_on.strftime("%b %d, %Y") %></td>
 
-        <td><%= strftime(event.gametime) %></td>
+        <td><%= event.gametime.strftime("at %I:%M%p") %></td>
 
         <td><%= event.home_team %></td>
 

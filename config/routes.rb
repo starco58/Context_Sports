@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :action_plays
   # Routes for the Owner resource:
   # CREATE
   get('/owners/new', { :controller => 'owners', :action => 'new' })
