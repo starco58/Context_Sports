@@ -29,16 +29,16 @@
   </div>
 
 
-  <!-- Label and input for player -->
+  <!-- Label and input for fault -->
   <div class="form-group">
 
-    <label for="type" class="col-sm-2 control-label">
-      Player
-    </label>
-    <div class="col-sm-10">
-
-      <input type="text" id="player" name="player" placeholder="Player" class="form-control" value="<%= @play.player %>">
-
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label for="fault">
+          <input type="checkbox" id="fault" name="fault" value="1" <%= "checked" if @play.fault %>>
+          Fault
+        </label>
+      </div>
     </div>
 
   </div>

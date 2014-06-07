@@ -12,7 +12,7 @@
 
       <th>Type</th>
 
-      <th>Player</th>
+      <th>Fault</th>
 
       <th></th>
       <th></th>
@@ -21,26 +21,24 @@
   </thead>
 
   <tbody>
-    <% @plays.each do |play| %>
-      <tr>
-
-        <td><%= play.type %></td>
-
-        <td><%= play.player %></td>
-
 
         <td>
-          <a href="/plays/<%= play.id %>" class="btn btn-primary">
+          <a href="/plays/<%= @play_id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
           </a>
         </td>
         <td>
-          <a href="/plays/<%= play.id %>/edit" class="btn btn-warning">
+          <a href="/plays/<%= @play_id %>/edit" class="btn btn-warning">
             <i class="fa fa-edit"></i>
           </a>
         </td>
+        <td>
+          <a href="/delete_play/<%= @play_id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+
       </tr>
-    <% end %>
   </tbody>
 </table>
 
