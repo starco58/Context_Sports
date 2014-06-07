@@ -53,3 +53,33 @@
   </tbody>
 </table>
 
+<% @players.each do |player| %>
+  <div class="row" id="player_<%= player.id %>">
+    <div class="col-md-2 col-md-offset-1">
+      <div class="pull-left">
+        <p class="text-right">
+          <a href="/users/<%= current_user.id %>">
+            <%= current_user.username %>
+          </a>
+        </p>
+        <p class="text-right"><%= time_ago_in_words(player.created_at) %> ago</p>
+      </div>
+      <div class="pull-right">
+        <img src="<%= current_user.avatar_url %>" class="img-responsive pull-right">
+      </div>
+    </div>
+    <div class="col-md-6 well">
+      <div class="thumbnail">
+        <img src="<%= player.image_url %>">
+          <p>
+           <a href="/players/<%= player.id %>" class="btn btn-primary">
+              <i class="fa fa-search-plus"></i>
+            </a>
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<% end %>
