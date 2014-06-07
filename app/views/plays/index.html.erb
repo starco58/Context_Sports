@@ -12,7 +12,7 @@
 
       <th>Type</th>
 
-      <th>Fault</th>
+      <th>Player</th>
 
       <th></th>
       <th></th>
@@ -26,7 +26,7 @@
 
         <td><%= play.type %></td>
 
-        <td><%= play.fault %></td>
+        <td><%= play.player %></td>
 
 
         <td>
@@ -39,12 +39,6 @@
             <i class="fa fa-edit"></i>
           </a>
         </td>
-        <td>
-          <a href="/delete_play/<%= play.id %>" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i>
-          </a>
-        </td>
-
       </tr>
     <% end %>
   </tbody>

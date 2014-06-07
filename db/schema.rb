@@ -40,12 +40,12 @@ ActiveRecord::Schema.define(version: 20140606221033) do
 
   create_table "plays", force: true do |t|
     t.string   "type"
-    t.boolean  "fault"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "responses", force: true do |t|
+    t.boolean  "fault"
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
